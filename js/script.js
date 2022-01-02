@@ -1,7 +1,7 @@
 function playGame(argPlayerMove){
   if(argPlayerMove == '#play-rock') return 'kamień'; //dałem 3 różne if żeby sprawdzić czy ktorys zaraguje odpowiednio
-  if(argPlayerMove == 2) return 'papier';
-  if(argPlayerMove == 'nożyce') return 'nożyce'
+  if(argPlayerMove == '#play-paper') return 'papier';
+  if(argPlayerMove == '#play-scissors') return 'nożyce'
 
 
  
@@ -58,7 +58,7 @@ let computerMove = getMoveName(randomNumber);
 printMessage('Ruch komputera to: ' + computerMove);
 
 // ustalamy zwycięzce
-displayResult(computerMove, /*argPlayerMove*/)
+displayResult(computerMove, argPlayerMove)
 }
 
 
@@ -69,9 +69,9 @@ document.getElementById('play-rock').addEventListener('click', function(){
 });
 
 document.getElementById('play-paper').addEventListener('click', function(){
-  playGame('Papier');
+  playGame('papier');
 });
 
 document.getElementById('play-scissors').addEventListener('click', function(){
-  playGame('Nożyce');
+  playGame('nożyce');
 });
