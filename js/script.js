@@ -1,5 +1,5 @@
 function playGame(argPlayerMove){
-  if(argPlayerMove == '#play-rock') return 'kamień';
+  if(argPlayerMove == '#play-rock') return 'kamień'; //dałem 3 różne if żeby sprawdzić czy ktorys zaraguje odpowiednio
   if(argPlayerMove == 2) return 'papier';
   if(argPlayerMove == 'nożyce') return 'nożyce'
 
