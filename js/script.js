@@ -1,7 +1,7 @@
-function playGame(numberChoice){
-  if(numberChoice == 1) return 'kamień';
-  if(numberChoice == 2) return 'papier';
-  if(numberChoice == 3) return 'nożyce'
+function playGame(argPlayerMove){
+  if(argPlayerMove == '#play-rock') return 'kamień';
+  if(argPlayerMove == 2) return 'papier';
+  if(argPlayerMove == 'nożyce') return 'nożyce'
 
 
  
@@ -58,7 +58,7 @@ let computerMove = getMoveName(randomNumber);
 printMessage('Ruch komputera to: ' + computerMove);
 
 // ustalamy zwycięzce
-displayResult(computerMove, /*playerInput*/)
+displayResult(computerMove, /*argPlayerMove*/)
 }
 
 
